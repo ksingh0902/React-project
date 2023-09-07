@@ -13,13 +13,13 @@ const Navbar = (props) => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-a active" aria-current="page" href="home">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-a" href="about">{props.about}</a>
+          <a class="nav-link active" aria-current="page" href="#">{props.about}</a>
           </li>
            </ul>
-           <div className="dropdown mx-2">
+           {/* <div className="dropdown mx-2">
               <a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Change Theme
               </a>
@@ -29,7 +29,7 @@ const Navbar = (props) => {
                 <li><a className="dropdown-item" href="#">Red Background</a></li>
                 <li><a className="dropdown-item" href="#">Teal Background</a></li>
               </ul>
-            </div>
+            </div> */}
            <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
             <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enabled DarkMode</label>

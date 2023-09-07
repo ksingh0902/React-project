@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import TextForm from "./Components/TextForm";
-import About from "./Components/About";
+// import About from "./Components/About";
 import React, { useState } from 'react'
 import Alert from "./Components/Alert";
 // import {gi
@@ -40,13 +40,12 @@ function App() {
 
   return (
     <>
-      {/* <Router> */}
       <Navbar title="TextUtlis" about="About Us" mode={mode}  toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
         {/* <Switch>
           <Route exact path="/about"> */}
-          <About mode={mode}/>
+          {/* <About mode={mode}/> */}
           {/* </Route> 
            <Route path="/"> */}
           <TextForm heading ="Try TextUtlis- Word Counter, Remove Extra Spaces, Copy it" showAlert={showAlert} mode={mode} />
